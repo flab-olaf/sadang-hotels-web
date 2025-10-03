@@ -8,15 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@olaf-design-ui/ui':
-        specifier: ^0.0.0
-        version: 0.0.0(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@sadang-new/ui':
-        specifier: ^0.1.0
-        version: 0.1.0(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@sadang-olaf/ui':
-        specifier: ^1.1.0
-        version: 1.1.0(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        specifier: ^1.1.3
+        version: 1.1.3(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@tanstack/react-query':
         specifier: ^5.90.2
         version: 5.90.2(react@19.1.1)
@@ -32,6 +26,9 @@ importers:
       react-dom:
         specifier: ^19.1.1
         version: 19.1.1(react@19.1.1)
+      react-infinite-scroll-component:
+        specifier: ^6.1.0
+        version: 6.1.0(react@19.1.1)
       react-router-dom:
         specifier: ^7.9.3
         version: 7.9.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -624,14 +621,6 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@olaf-design-ui/ui@0.0.0':
-    resolution: {integrity: sha512-FCCcAcjtm9qwblnL6NN2eni51Ba8KBiDPb1D3PtQR60PLW/jsd885g5PfpO7AWazEFZ0fjwtJCkhyehZK0T/iA==}
-    engines: {node: '>= 20'}
-    peerDependencies:
-      classnames: '>=2'
-      react: '>=18'
-      react-dom: '>=18'
-
   '@parcel/watcher-android-arm64@2.5.1':
     resolution: {integrity: sha512-KF8+j9nNbUN8vzOFDpRMsaKBHZ/mcjEjMToVMJOhTozkDonQFFrRcfdLWn6yWKCmJKmdVxSgHiYvTCef4/qcBA==}
     engines: {node: '>= 10.0.0'}
@@ -857,16 +846,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sadang-new/ui@0.1.0':
-    resolution: {integrity: sha512-i64qYYu1XRU+yywjGBKdvFeE5SKLTxnDzcL9ZrbMOpfoICO5NniJi70qTnFD2ju9u7OA9evEmX1YsCHXDS2Hqg==}
-    engines: {node: '>= 20'}
-    peerDependencies:
-      classnames: '>=2'
-      react: '>=18'
-      react-dom: '>=18'
-
-  '@sadang-olaf/ui@1.1.0':
-    resolution: {integrity: sha512-roOqVMeb+6j9d6dC0wy0VSlvAh2/tvoJIypmFukK67OvpIZpnWsQ25F23wp0hMwOzkRCXpicVJjvrzgDZC+JiQ==}
+  '@sadang-olaf/ui@1.1.3':
+    resolution: {integrity: sha512-OQ5TIoQUryw2TBYsSEbeJBho8Vytf39/EWl55deIb5ac6OiOdHe36yYn1I4VfqN+hCMLLEW+bzApd2JCZAEXwg==}
     engines: {node: '>= 20'}
     peerDependencies:
       classnames: '>=2'
@@ -1449,6 +1430,11 @@ packages:
     peerDependencies:
       react: ^19.1.1
 
+  react-infinite-scroll-component@6.1.0:
+    resolution: {integrity: sha512-SQu5nCqy8DxQWpnUVLx7V7b7LcA37aM7tvoWjTLZp1dk6EJibM5/4EJKzOnl07/BsM1Y40sKLuqjCwwH/xV0TQ==}
+    peerDependencies:
+      react: '>=16.0.0'
+
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
@@ -1672,6 +1658,10 @@ packages:
   sync-message-port@1.1.3:
     resolution: {integrity: sha512-GTt8rSKje5FilG+wEdfCkOcLL7LWqpMlr2c3LRuKt/YXxcJ52aGSbGBAdI4L3aaqfrBt6y711El53ItyH1NWzg==}
     engines: {node: '>=16.0.0'}
+
+  throttle-debounce@2.3.0:
+    resolution: {integrity: sha512-H7oLPV0P7+jgvrk+6mwwwBDmxTaxnu9HMXmloNLXwnNO0ZxZ31Orah2n8lU1eMPvsaowP2CX+USCgyovXfdOFQ==}
+    engines: {node: '>=8'}
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
@@ -2414,12 +2404,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@olaf-design-ui/ui@0.0.0(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
-    dependencies:
-      classnames: 2.5.1
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
-
   '@parcel/watcher-android-arm64@2.5.1':
     optional: true
 
@@ -2572,14 +2556,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.52.3':
     optional: true
 
-  '@sadang-new/ui@0.1.0(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
-    dependencies:
-      classnames: 2.5.1
-      clsx: 2.1.1
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
-
-  '@sadang-olaf/ui@1.1.0(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@sadang-olaf/ui@1.1.3(classnames@2.5.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
       classnames: 2.5.1
       clsx: 2.1.1
@@ -3219,6 +3196,11 @@ snapshots:
       react: 19.1.1
       scheduler: 0.26.0
 
+  react-infinite-scroll-component@6.1.0(react@19.1.1):
+    dependencies:
+      react: 19.1.1
+      throttle-debounce: 2.3.0
+
   react-refresh@0.17.0: {}
 
   react-router-dom@7.9.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
@@ -3422,6 +3404,8 @@ snapshots:
       sync-message-port: 1.1.3
 
   sync-message-port@1.1.3: {}
+
+  throttle-debounce@2.3.0: {}
 
   tinyglobby@0.2.15:
     dependencies:

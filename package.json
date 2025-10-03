@@ -10,14 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@olaf-design-ui/ui": "^0.0.0",
-    "@sadang-new/ui": "^0.1.0",
-    "@sadang-olaf/ui": "^1.1.0",
+    "@sadang-olaf/ui": "^1.1.3",
     "@tanstack/react-query": "^5.90.2",
     "firebase": "^12.3.0",
     "ms": "^2.1.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^7.9.3"
   },
   "devDependencies": {
